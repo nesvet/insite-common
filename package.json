@@ -9,7 +9,7 @@
     ".": "./dist/index.js",
     "./types": "./dist/types.js"
   },
-  "packageManager": "bun@1.1.26",
+  "packageManager": "bun@1.1.33",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p ."
@@ -26,8 +26,8 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "@nesvet/conveyer": "^2.2.4",
-    "@nesvet/eslint-config": "^2.0.25",
-    "typescript": "^5.5.4"
+    "@nesvet/conveyer": "^2.2.5",
+    "@nesvet/eslint-config": "^2.0.34",
+    "typescript": "^5.6.3"
   }
 }

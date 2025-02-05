@@ -3,16 +3,16 @@
   "version": "2.0.1",
   "description": "inSite common things",
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "main": "./lib/index.ts",
+  "module": "./lib/index.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./types": "./dist/types.js"
+    ".": "./lib/common/index.ts",
+    "./frontend": "./lib/frontend/index.ts",
+    "./backend": "./lib/backend/index.ts"
   },
-  "packageManager": "bun@1.1.43",
+  "packageManager": "bun@1.2.2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -p ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,12 @@
   ],
   "author": "Eugene Nesvetaev <dev@nesvet.dev> (https://nesvet.dev/)",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "@nesvet/conveyer": "^2.2.5",
-    "@nesvet/eslint-config": "^2.0.34",
+    "@nesvet/eslint-config": "^2.0.46",
     "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "insite-http": "^2.0.7",
+    "insite-ws": "^2.0.20"
   }
 }

@@ -3,7 +3,7 @@ import type https from "node:https";
 import type { AddressInfo } from "node:net";
 
 
-type InSiteServer = {
+type Server = {
 	icon: string;
 	name: string;
 	protocol: string;
@@ -11,7 +11,7 @@ type InSiteServer = {
 };
 
 
-export function showServerListeningMessage(server: InSiteServer) {
+export function showServerListeningMessage(server: Server) {
 	
 	const { address, family, port } = server.server.address() as AddressInfo;
 	

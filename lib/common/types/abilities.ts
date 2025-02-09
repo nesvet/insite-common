@@ -84,7 +84,7 @@ export type ScanAbilitySchemas<AS extends AbilitiesSchema, ForceTopLevel = false
 	>;
 
 
-type BasisInSiteAbilities = {
+type BasisAbilities = {
 	login?: {
 		sessionsLimit: number;
 	};
@@ -96,4 +96,4 @@ type BasisInSiteAbilities = {
 };
 
 
-export type Abilities<AS extends AbilitiesSchema> = BasisInSiteAbilities & ScanAbilitySchemas<AS, true>;
+export type Abilities<AS extends AbilitiesSchema> = BasisAbilities & ScanAbilitySchemas<AS, true>;

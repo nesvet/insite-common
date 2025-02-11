@@ -3,16 +3,18 @@
   "version": "2.1.0",
   "description": "inSite common things",
   "type": "module",
-  "main": "./lib/index.ts",
-  "module": "./lib/index.ts",
+  "main": "./dist/common/index.js",
+  "module": "./dist/common/index.js",
   "exports": {
-    ".": "./lib/common/index.ts",
-    "./frontend": "./lib/frontend/index.ts",
-    "./backend": "./lib/backend/index.ts"
+    ".": "./dist/common/index.js",
+    "./frontend": "./dist/frontend/index.js",
+    "./backend": "./dist/backend/index.js"
   },
   "packageManager": "bun@1.2.2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bun .conveyer.js",
+    "postbuild": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   "author": "Eugene Nesvetaev <dev@nesvet.dev> (https://nesvet.dev/)",
   "license": "MIT",
   "devDependencies": {
+    "@nesvet/conveyer": "^2.4.3",
     "@nesvet/eslint-config": "^2.0.47",
     "typescript": "^5.7.3"
   },

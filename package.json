@@ -32,7 +32,7 @@
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "insite-http": "^2.1.0",
-    "insite-ws": "^2.1.0"
+    "insite-http": "^2.1.2",
+    "insite-ws": "^2.1.2"
   }
 }

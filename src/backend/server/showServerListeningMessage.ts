@@ -16,7 +16,7 @@ export function showServerListeningMessage(server: Server) {
 	const { address, family, port } = server.server.address() as AddressInfo;
 	
 	console.info(
-		`${server.icon} inSite ${server.name} Server is listening on`,
+		`${server.icon} ${server.name} is listening on`,
 		`${server.protocol}://${
 			family === "IPv4" ?
 				address : (
